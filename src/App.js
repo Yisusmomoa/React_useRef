@@ -1,25 +1,37 @@
-import logo from './logo.svg';
+
 import './App.css';
+import CopyApp from './components/CopyApp';
+import FocusApp from './components/FocusApp';
 
 function App() {
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <FocusApp></FocusApp> */}
+      <CopyApp></CopyApp>
     </div>
   );
 }
 
 export default App;
+
+
+/*
+use ref tiene dos usos
+
+1. una interacción con el dom (real) sin pasar por el virtual dom
+focus 
+copy
+media player
+scroll animation
+
+2. referencia mutable
+una variable que vamos a tener en react, cuyo valor es persistente a lo largo de los renders que van ocurriendo
+cada vez que se pinte el componente. pero con la diferencia a los estados que cuando estas variables cambian su valor
+no causa una nueva renderización
+render count 
+loading app
+
+
+
+*/
