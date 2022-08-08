@@ -2,13 +2,19 @@
 import './App.css';
 import CopyApp from './components/CopyApp';
 import FocusApp from './components/FocusApp';
+import MediaPlayer from './components/MediaPlayer';
 
+
+//minuto 23
+//https://www.youtube.com/watch?v=D2ElJVzriCk
 function App() {
   
+
   return (
     <div className="App">
       {/* <FocusApp></FocusApp> */}
-      <CopyApp></CopyApp>
+      {/* <CopyApp></CopyApp> */}
+      <MediaPlayer></MediaPlayer>
     </div>
   );
 }
